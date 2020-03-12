@@ -1,9 +1,10 @@
-package com.kadarisman.trymvvmshoppinglist.data
+package com.kadarisman.trymvvmshoppinglist.data.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.kadarisman.trymvvmshoppinglist.data.ShoppingItem
 
 @Database(
     entities = [ShoppingItem::class],

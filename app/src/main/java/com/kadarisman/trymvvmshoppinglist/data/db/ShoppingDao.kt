@@ -1,10 +1,11 @@
-package com.kadarisman.trymvvmshoppinglist.data
+package com.kadarisman.trymvvmshoppinglist.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.kadarisman.trymvvmshoppinglist.data.ShoppingItem
 
 interface ShoppingDao {
 
