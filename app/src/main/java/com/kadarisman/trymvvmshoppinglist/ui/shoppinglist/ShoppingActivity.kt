@@ -1,7 +1,8 @@
-package com.kadarisman.trymvvmshoppinglist
+package com.kadarisman.trymvvmshoppinglist.ui.shoppinglist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kadarisman.trymvvmshoppinglist.R
 
 class ShoppingActivity : AppCompatActivity() {
 
