@@ -1,4 +1,4 @@
-package com.kadarisman.trymvvmshoppinglist
+package com.kadarisman.trymvvmshoppinglist.data
 
 import android.content.Context
 import androidx.room.Database
@@ -17,8 +17,12 @@ abstract class ShoppingDatabase: RoomDatabase() {
         private var instance: ShoppingDatabase? = null
         private val LOCK = Any()
 
-        operator fun invoke(context: Context) = instance ?: synchronized(LOCK){
-            instance ?: createDatabase(context).also { instance = it }
+        operator fun invoke(context: Context) = instance
+            ?: synchronized(LOCK){
+            instance
+                ?: createDatabase(
+                    context
+                ).also { instance = it }
         }
 
         private fun createDatabase(context: Context) =

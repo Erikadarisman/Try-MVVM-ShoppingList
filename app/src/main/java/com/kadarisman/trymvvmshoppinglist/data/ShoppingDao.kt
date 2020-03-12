@@ -1,4 +1,4 @@
-package com.kadarisman.trymvvmshoppinglist
+package com.kadarisman.trymvvmshoppinglist.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.Delete

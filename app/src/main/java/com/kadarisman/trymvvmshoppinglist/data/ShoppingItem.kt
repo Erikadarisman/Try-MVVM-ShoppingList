@@ -1,4 +1,4 @@
-package com.kadarisman.trymvvmshoppinglist
+package com.kadarisman.trymvvmshoppinglist.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
