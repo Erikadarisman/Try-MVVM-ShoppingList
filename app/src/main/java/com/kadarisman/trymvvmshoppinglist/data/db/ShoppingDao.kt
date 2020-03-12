@@ -5,7 +5,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.kadarisman.trymvvmshoppinglist.data.ShoppingItem
+import com.kadarisman.trymvvmshoppinglist.data.db.entities.ShoppingItem
 
 interface ShoppingDao {
 
