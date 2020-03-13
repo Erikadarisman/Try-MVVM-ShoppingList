@@ -14,7 +14,8 @@ class ShoppingItemAdapter(
     private val viewModel: ShoppingViewModel
 ) : RecyclerView.Adapter<ShoppingItemAdapter.ShoppingViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShoppingViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.shopping_item, parent, false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.shopping_item, parent, false)
         return ShoppingViewHolder((view))
     }
 
@@ -38,7 +39,7 @@ class ShoppingItemAdapter(
         }
 
         holder.itemView.ivMinus.setOnClickListener {
-            if(curShoppingItem.amount > 0) {
+            if (curShoppingItem.amount > 0) {
                 curShoppingItem.amount--
                 viewModel.upsert(curShoppingItem)
             }
